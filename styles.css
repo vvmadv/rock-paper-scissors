@@ -1,48 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
+body {
+    background-color: rgb(25, 25, 25);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<link rel="stylesheet" href="styles.css">
 
-</head>
+.title {
+    font-size: 30px;
+    font-weight: bold;
 
-<body>
-    <section class="game">
-    <div class="center"> 
-    <p class="title">Rock Paper Scissors</p>
-    <button onclick="playGame('rock');" class="move-button"> 
-        <img src="img/rock-emoji.png" class="move-icon">
-    </button>
+}
 
-    <button onclick="
-     playGame('paper');
-        "class="move-button"> <img src="img/paper-emoji.png" class="move-icon">
-    </button>
+.move-icon {
+   height: 50px;
 
-    <button onclick="
-       playGame('scissors');
-        "class="move-button"> <img src="img/scissors-emoji.png" class="move-icon">
-    </button>
+}
 
-    <p class="js-result result"></p>
-    <p class="js-moves"></p>
-    <p class="js-score"> </p>
+.move-button {
+    background-color: transparent;
+    border: 1px solid white;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    margin-right: 10px;
+    cursor: pointer;
+}
 
-    <button onclick="
-    score.wins = 0;
-    score.losses = 0;
-    score.ties = 0;
-    localStorage.removeItem('score');
-    updateScoreElement();
-    " class="reset-score-button">Reset score</button>
-    </div>
+.result {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+.score {
+    margin-top: 50px;
 
-</section>
+}
 
-    <script src="10-game.js"></script>
-</body>
+.js-score {
+    font-size: large; 
+  }
 
-</html>
+.reset-score-button{
+    background-color: white;
+    border: none;
+    font-size: 15px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center {
+    /* margin: 0 auto; */
+    height: 50vh;
+    width: 50vh;
+    margin: 25vh auto;
+    text-align: center;
+  }
+
