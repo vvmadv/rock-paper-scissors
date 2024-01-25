@@ -1,6 +1,7 @@
 body {
-    background-color: rgb(25, 25, 25);
-    color: white;
+background: url('https://static.vecteezy.com/system/resources/previews/003/169/780/non_2x/white-colored-background-free-vector.jpg');
+    /* background-color: rgb(25, 25, 25); */
+    color: rgb(48, 48, 48);
     font-family: Arial, Helvetica, sans-serif;
     
 }
@@ -14,17 +15,21 @@ body {
 
 .move-icon {
    height: 50px;
-
 }
+
 
 .move-button {
     background-color: transparent;
-    border: 1px solid white;
+    border: 1px solid rgb(43, 43, 43);
     width: 120px;
     height: 120px;
     border-radius: 60px;
     margin-right: 10px;
     cursor: pointer;
+}
+
+.move-button:hover {
+    box-shadow: 5px 5px 5px rgb(212, 202, 202);
 }
 
 .result {
@@ -42,13 +47,18 @@ body {
   }
 
 .reset-score-button{
-    background-color: white;
-    border: none;
+    background-color: transparent;
+    border: 1px solid;
     font-size: 15px;
     padding: 8px 15px;
     border-radius: 10px;
     cursor: pointer;
 }
+
+.reset-score-button:hover {
+    box-shadow: 0px 0px 1px black;
+}
+
 
 .center {
     /* margin: 0 auto; */
